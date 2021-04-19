@@ -1,0 +1,33 @@
+.home {
+    display: flex;
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 420px;
+}
+
+.home-left__name {
+    font-size: 48px;
+    font-family: 'Zilla Slab', 'Times New Roman', Times, serif;
+}
+
+.home-social {
+    display: flex;
+}
+
+.home-social__button {
+    margin: 0 .8rem;
+}
+
+
+.home-img {
+    height: 100vh;
+    width: auto;
+    flex-shrink: 2;
+}
