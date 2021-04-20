@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab&display=swap');
 
-$primary: #022b3a;
+$light-primary: #022b3a;
 
-$theme-colors: (
-  "primary": $primary,
-  "danger": #ff4136
-);
+.text-light-primary {
+    color: $light-primary;
+    border-color: $light-primary;
+}
 
 .roboto {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
