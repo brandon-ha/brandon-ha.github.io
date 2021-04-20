@@ -8,13 +8,68 @@
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    min-width: 420px;
+    min-width: 480px;
 }
 
 .home-left__name {
     font-size: 48px;
     font-family: 'Zilla Slab', 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.home-left__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+$wave-animation-name: wave;
+$wave-duration: 2s;
+$wave-delay: 1s;
+$wave-timing: ease-in-out;
+
+.home-hand {
+    animation: $wave-animation-name $wave-duration $wave-timing $wave-delay;
+    -webkit-animation: $wave-animation-name $wave-duration $wave-timing $wave-delay;
+    -moz-animation: $wave-animation-name $wave-duration $wave-timing $wave-delay;
+    font-size: 24px;
+    transform-origin: 75% 75%;
+    margin-right: 0.4rem;
+}
+
+@keyframes wave {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+@-webkit-keyframes wave {
+    0% { -webkit-transform: rotate( 0.0deg) }
+   10% { -webkit-transform: rotate(14.0deg) } 
+   20% { -webkit-transform: rotate(-8.0deg) }
+   30% { -webkit-transform: rotate(14.0deg) }
+   40% { -webkit-transform: rotate(-4.0deg) }
+   50% { -webkit-transform: rotate(10.0deg) }
+   60% { -webkit-transform: rotate( 0.0deg) }  
+  100% { -webkit-transform: rotate( 0.0deg) }
+}
+
+@-moz-keyframes wave {
+    0% { -moz-transform: rotate( 0.0deg) }
+   10% { -moz-transform: rotate(14.0deg) } 
+   20% { -moz-transform: rotate(-8.0deg) }
+   30% { -moz-transform: rotate(14.0deg) }
+   40% { -moz-transform: rotate(-4.0deg) }
+   50% { -moz-transform: rotate(10.0deg) }
+   60% { -moz-transform: rotate( 0.0deg) }  
+  100% { -moz-transform: rotate( 0.0deg) }
 }
 
 .home-social {
@@ -25,9 +80,13 @@
     margin: 0 .8rem;
 }
 
+.home-right {
+    height: 100vh;
+}
 
 .home-img {
-    height: 100vh;
+    height: 100%;
     width: auto;
     flex-shrink: 2;
+    object-fit: fill;
 }
