@@ -102,5 +102,5 @@ $wave-timing: ease-in-out;
     order:1;
     background-size: cover;
     background-position: center;
-    background-image: url("/assets/images/half-lg.jpg");
+    background-image: url($baseurl + "/assets/images/half-lg.jpg");
 }
