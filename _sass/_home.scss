@@ -1,14 +1,19 @@
 .home {
     display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    align-items: stretch;
 }
 
 .home-left {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: center;
     align-items: center;
     min-width: 480px;
+    max-width: 50%;
+    flex-grow: 1;
 }
 
 .home-left__name {
@@ -28,7 +33,7 @@
 
 $wave-animation-name: wave;
 $wave-duration: 2s;
-$wave-delay: 1s;
+$wave-delay: 0.75s;
 $wave-timing: ease-in-out;
 
 .home-hand {
@@ -90,13 +95,12 @@ $wave-timing: ease-in-out;
     }
 }
 
-.home-right {
-    height: 100vh;
-}
-
 .home-img {
-    height: 100%;
-    width: auto;
-    flex-shrink: 2;
-    object-fit: fill;
+    flex-grow: 1;
+    min-height:50vh;
+    -ms-flex-order:1;
+    order:1;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/assets/images/half-lg.jpg");
 }
