@@ -106,7 +106,7 @@ $wave-timing: ease-in-out;
     background-image: url($baseurl + "/assets/images/half-lg.jpg");
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .home {
         flex-direction: column;
     }
