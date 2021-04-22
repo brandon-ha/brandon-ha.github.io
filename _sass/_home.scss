@@ -14,6 +14,7 @@
     min-width: 480px;
     max-width: 50%;
     flex-grow: 1;
+    order: 1;
 }
 
 .home-left__name {
@@ -99,8 +100,23 @@ $wave-timing: ease-in-out;
     flex-grow: 1;
     min-height:50vh;
     -ms-flex-order:1;
-    order:1;
+    order:2;
     background-size: cover;
     background-position: center;
     background-image: url($baseurl + "/assets/images/half-lg.jpg");
+}
+
+@media (max-width: 576px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home-left {
+        order: 2;
+        align-self: center;
+    }
+
+    .home-img {
+        order: 1;
+    }
 }
